@@ -92,6 +92,7 @@ const filteredProducts = computed(() => {
     <Shop
       @update-filter="updateFilter"
       :products="filteredProducts"
+      :filters="state.filters"
       @add-product-to-cart="addProductToCart"
       class="shop"
     />
