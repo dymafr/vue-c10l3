@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import type {
-  FiltersInterface,
-  FilterUpdate,
-  Category,
-} from '../../interfaces';
+import type { FiltersInterface, ProductInterface } from '../../interfaces';
 import ShopProductList from './ShopProductList.vue';
 import ShopFilters from './ShopFilters.vue';
 
 defineProps<{
   products: ProductInterface[];
+  filters: FiltersInterface;
 }>();
 
 const emit = defineEmits<{
