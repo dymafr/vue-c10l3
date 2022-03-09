@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { FiltersInterface, ProductInterface } from '../../interfaces';
+import type {
+  FiltersInterface,
+  ProductInterface,
+  FilterUpdate,
+} from '../../interfaces';
 import ShopProductList from './ShopProductList.vue';
 import ShopFilters from './ShopFilters.vue';
 
